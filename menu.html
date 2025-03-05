@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Barnedo's Canteen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #FF6347; /* Tomato Red */
+            color: white;
+        }
+        .section-light {
+            background-color: #FFA07A; /* Light Salmon */
+            padding: 50px 0;
+            color: black;
+        }
+        .section-dark {
+            background-color: #CD5C5C; /* Indian Red */
+            padding: 50px 0;
+            color: white;
+        }
+        .footer {
+            background-color: #000; /* Black */
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .menu-item {
+            position: relative;
+            text-align: center;
+            padding: 10px;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+        .menu-description {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            width: 90%;
+        }
+        .menu-item:hover .menu-description {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Barnedo's Canteen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Soups and Specialties Carousel -->
+    <section class="container section-light my-5">
+        <h2 class="text-center">Soups and Specialties</h2>
+        <div id="soupsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row text-center">
+                        <div class="col-md-4 menu-item">
+                            <img src="images/Bulalo.jpg" class="img-fluid" alt="Bulalo">
+                            <div class="menu-description">A rich beef marrow soup slow-cooked to perfection. - ₱90</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/pares.jpg" class="img-fluid" alt="Pares">
+                            <div class="menu-description">Tender beef stew served with garlic rice and soup. - ₱50</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/mami_beef.jpg" class="img-fluid" alt="Mami">
+                            <div class="menu-description">A comforting noodle soup with savory broth. - ₱40</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/mami_special.jpg" class="img-fluid" alt="Mami Special">
+                            <div class="menu-description">A comforting noodle soup with egg and beef. - ₱50</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/sinigang.jpg" class="img-fluid" alt="Sinigang">
+                            <div class="menu-description">A sour soup made with vegetables and pork. - ₱70</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/nilaga_baboy.jpg" class="img-fluid" alt="Nilaga Baboy">
+                            <div class="menu-description">Boiled pork served mostly for lunch and dinner. - ₱65</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tapsilogs Carousel -->
+    <section class="container section-dark my-5">
+        <h2 class="text-center">Tapsilogs</h2>
+        <div id="tapsilogCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row text-center">
+                        <div class="col-md-4 menu-item">
+                            <img src="images/Tapsilog.jpg" class="img-fluid" alt="Tapsilog">
+                            <div class="menu-description">A classic Filipino breakfast with beef tapa, garlic rice, and egg. - ₱90</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/chicksilog.jpg" class="img-fluid" alt="Chicksilog">
+                            <div class="menu-description">Crispy fried chicken served with garlic rice and egg. - ₱75</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/longsilog.jpg" class="img-fluid" alt="Longsilog">
+                            <div class="menu-description">Sweet and savory longganisa with garlic rice and egg. - ₱55</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/liemposilog.jpg" class="img-fluid" alt="Liemposilog">
+                            <div class="menu-description">A sliced pork belly fried with garlic rice and egg. - ₱90</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/spamsilog.jpg" class="img-fluid" alt="Spamsilog">
+                            <div class="menu-description">Salty preserved luncheon with garlic rice and egg. - ₱60</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/bangsilog.jpg" class="img-fluid" alt="Bangsilog">
+                            <div class="menu-description">A common filipino fish fried with garlic rice and egg. - ₱75</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lutong Ulam Carousel -->
+    <section class="container section-light my-5">
+        <h2 class="text-center">Lutong Ulam</h2>
+        <div id="ulamCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row text-center">
+                        <div class="col-md-4 menu-item">
+                            <img src="images/Menudo.jpg" class="img-fluid" alt="Menudo">
+                            <div class="menu-description">A rich tomato-based pork stew with vegetables. - ₱65</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/adobo_manok.jpg" class="img-fluid" alt="Adobong Manok">
+                            <div class="menu-description">Chicken stewed in soy sauce, vinegar, and garlic. - ₱65</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/bicol_express.jpg" class="img-fluid" alt="Bicol Express">
+                            <div class="menu-description">Spicy pork dish cooked in coconut milk and chili. - ₱65</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/pritong_tilapia.jpg" class="img-fluid" alt="Pritong Tilapia">
+                            <div class="menu-description">A tilapia that is deep fried complemented with sauces. - ₱60</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/meatballs.jpg" class="img-fluid" alt="Meatballs">
+                            <div class="menu-description">Made with ground pork shaped into balls drenched in a tomato braised sauce. - ₱60</div>
+                        </div>
+                        <div class="col-md-4 menu-item">
+                            <img src="images/beefsteak.jpg" class="img-fluid" alt="Beefsteak">
+                            <div class="menu-description">A flat beef dish marinated in a typical soy cause, calamansi, and topped with onion - ₱65</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Barnedo's Canteen. All rights reserved.</p>
+        <p>Developed by Barnedo, Vonn Aeron A.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
